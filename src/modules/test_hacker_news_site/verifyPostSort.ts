@@ -118,11 +118,18 @@ const checkArrayPostDetailsSorted = ({
  */
 async function verifySortHackerNewsArticles(): Promise<void> {
   const nPostsToCheck = 100;
+  console.log(`
+    Task start: Verify first ${nPostsToCheck} Hacker News articles are sorted by postDate.`);
+  // browse Hacker News pages and get post details for first nPostsToCheck (100)
   const postDetailsArray = await getPostDetailsUntilPostRank({
     maxPostsToLookup: nPostsToCheck,
   });
+  // check if the post details array is sorted by postDate
   const isSorted = checkArrayPostDetailsSorted({ postDetailsArray });
   console.log(`
+    Task complete: Verify first ${nPostsToCheck} Hacker News articles are sorted by postDate.`);
+  console.log(`
+    
     Hacker News articles sort check results:
     - First ${nPostsToCheck} posts are sorted by postDate: ${
     isSorted ? "YES" : "NO"
