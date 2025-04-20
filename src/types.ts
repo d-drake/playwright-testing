@@ -1,0 +1,1 @@
+export type PostDetailsArray = { postId: string; rank: string, postDate: Date }[];
