@@ -1,6 +1,6 @@
 ## Instructions
 
-This assignment has two questions as outlined below. When you are done, upload your assignment to our [application page](https://www.task-wolf.com/apply-qae):
+This assignment has two questions as outlined below.
 
 ### Question 1
 
