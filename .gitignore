@@ -3,3 +3,4 @@ node_modules/
 /playwright-report/
 /playwright/.cache/
 build/
+README_reference.md
