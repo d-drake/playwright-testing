@@ -4,7 +4,8 @@
   "description": "",
   "main": "./build/index.js",
   "scripts": {
-    "start": "nodemon ./build/index.js"
+    "test": "nodemon ./build/index.js",
+    "start": "node ./build/index.js"
   },
   "keywords": [],
   "author": "",

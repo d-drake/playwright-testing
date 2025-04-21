@@ -134,6 +134,8 @@ async function verifySortHackerNewsArticles(): Promise<void> {
     - First ${nPostsToCheck} posts are sorted by postDate: ${
     isSorted ? "YES" : "NO"
   }`);
+  process.exit(0);
+  // close browser
 }
 
 export { verifySortHackerNewsArticles };
